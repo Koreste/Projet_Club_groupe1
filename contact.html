@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body>
+    <form action="">
+        <h1> Contactez-nous </h1>
+        <h2> En savoir plus sur vous </h2>
+        <label for="nom">Nom </label>
+        <input type="text" id="nom" placeholder="Nom" required> 
+<br>
+        <label for="nom">Prénom</label>
+        <input type="text" id="prenom" placeholder="Prenom" required>   
+<br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Email" required>
+<br>
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" placeholder="Numéro de téléphone" required>
+<br>        
+        <label for="adherent">Etes-vous adhérent au club?</label>
+        <input class="radio" type="radio" id="Oui" name="fav_language" value="Oui">
+        <label for="prestation">Oui</label>
+        <input class="radio" type="radio" id="Non" name="fav_language" value="Non">
+        <label for="prestation">Non</label>
+
+<br> 
+        <h2> Votre demande concerne </h2>
+        <input class="checkbox" type="checkbox" id="ecole" name="ecole" value="Ecole de tennis">
+        <label for="ecole"> Ecole de tennis </label><br>
+        <input class="checkbox" type="checkbox" id="cours" name="cours" value="Cours adultes">
+        <label for="cours"> Cours adultes </label><br>
+        <input class="checkbox" type="checkbox" id="competition" name="competition" value="Competition">
+        <label for="competition"> Competition </label><br> 
+        <input class="checkbox" type="checkbox" id="animations" name="animations" value="Animations">
+        <label for="animations"> Animations </label><br>
+        <input class="checkbox" type="checkbox" id="inscriptions" name="inscriptions" value="Inscriptions">
+        <label for="inscriptions"> Inscriptions </label><br>
+        
+<br>
+        <label for="date">Mesage</label>
+        <input type="text" id="message" placeholder="Votre message">
+<br>  
+<br>  
+        <label for="document">Téléchargement </label>
+        <input type="file" id="document" name="document">
+<br>  
+<br>
+        <input class ="checkbox" type="checkbox" id="conditions" name="conditions" value="J'ai lu et j'accepte les conditions générales">
+        <label for="conditions"> J'ai lu et j'accepte les CGV </label><br>
+<br> 
+<br> 
+<br>
+<br> 
+        <input type="submit" id="submit" value="Envoyer">
+
+    </form>
+    
+    <script src="script.js"></script>
+
+</body>
