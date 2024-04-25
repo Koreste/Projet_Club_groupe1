@@ -17,7 +17,7 @@ body{
   font-family: Roboto;
   font-size: 20px;
   margin: 0;
-  padding: 0;
+  padding: 180px 0px 0px 0px;
 }
 ul {
   list-style: none;
@@ -74,8 +74,11 @@ a {
   .nav li {
     padding: 10px;
   }
-}
 
+  body{
+    padding: 140px 0px 0px 0px;
+  }
+}
 
 /* contact form */
 form {
@@ -84,8 +87,7 @@ form {
   background-size: cover;
   margin: 20px;
   padding: 20px;
-
-  }
+}
 
 #nomError, #prenomError, #emailError, #telephoneError {
 color: red;
