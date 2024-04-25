@@ -79,13 +79,19 @@ a {
 
 /* contact form */
 form {
-  margin: 20px;
-  padding: 20px;
-  background-image: url(terre_battue.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(terre_battue.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 20px;
+  padding: 20px;
 
+  }
+
+#nomError, #prenomError, #emailError, #telephoneError {
+color: red;
+font-weight: bold;
 }
+
 
 @media screen and (max-width: 768px) {
   form {
