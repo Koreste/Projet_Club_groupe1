@@ -1,11 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
 body{
-   background-color: #5271ff;
+   /*background-color: #001e62;*/
+   background-color : white ;
+}
+.top a{
+    margin-left: 600px;
+    width: 300px;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    color: transparent;
+    font-size: 5rem;
+    overflow: hidden;
 }
 .top{
-    background-image: url(tennistcg.png);
+    background-image: url("tennistcg.png");
     height: 200px;
-   
-    
+    overflow: hidden;
 }
 .top p{
     font-size: 3rem;
@@ -15,6 +29,7 @@ body{
     font-style: normal;
     text-decoration: underline red;
 }
+
 
 h1{
     font-size: 2.5rem;
@@ -29,8 +44,12 @@ h1{
     height: 100px;
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    border: 10px;
     padding-left: 0;
+}
+.radio_ligne{
+    display:flex;
+    align-items: center;
 }
 
 .nav li{
@@ -121,13 +140,12 @@ h1{
 .Bouton_slide--next{
     position: absolute;
     right:100px;
-    top : 8%;
+    top : 4%;
     transform: translateY(-50%);
 }
 .Bouton_slide--previous{
     position: absolute;
     left:100px;
-    top : 8%;
+    top : 4%;
     transform: translateY(-50%);
 }
-
