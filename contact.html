@@ -1,67 +1,163 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Formulaire de contact</title>
     <link rel="stylesheet" href="style.css">
-    
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />  
+    <script defer src="script.js"></script>/>
+    <link href="footer.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
 </head>
 <body>
-    <form action="">
+    <form class="contact-form" action="">
         <h1> Contactez-nous </h1>
-        <h2> En savoir plus sur vous </h2>
-        <label for="nom">Nom </label>
-        <input type="text" id="nom" placeholder="Nom" required> 
+        <section class="contact-form_container">
+                <div>
+                        <h2> En savoir plus sur vous </h2>
+                        <label for="nom">
+                                Nom
+                                <input type="text" id="nom" name="nom" placeholder="Nom" aria-label="Nom" required />
+                        </label>
+                        <label for="prenom">
+                                Prénom
+                                <input type="text" id="prenom" name="prenom" placeholder="Prénom" aria-label="Prénom" required />
+                        </label>
+                        <label for="email">
+                                E-mail
+                                <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+                        </label>
+                        <label for="telephone">
+                                Téléphone
+                                <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" aria-label="Téléphone" required />
+                        </label>
+                        <div class ="radio_line">
+                                <label>Etes-vous adhérent au club?</label>
+                                <input class="radio" type="radio" id="Oui" name="fav_language" value="Oui">
+                                <label for="prestation">Oui</label>
+                                <input class="radio" type="radio" id="Non" name="fav_language" value="Non">
+                                <label for="prestation">Non</label>
+                        </div>
+                </div>
+                <div>
+                        <h2> Votre demande concerne </h2>
+                        <div class="checkbox-container">
+                                <input type="checkbox" id="checkbox">
+                                <label for="checkbox">Label du Checkbox</label>
+                        </div>
+                        <div class="checkbox-container">
+                                <input class="checkbox" type="checkbox" id="ecole" name="ecole" value="Ecole de tennis">
+                                <label class="checkbox_label" for="ecole"> Ecole de tennis </label><br>
+                        </div>
+                        <div class="checkbox-container">
+                                <input class="checkbox" type="checkbox" id="cours" name="cours" value="Cours adultes">
+                                <label class="checkbox_label" for="cours"> Cours adultes </label><br>
+                        </div>
+                        <div class="checkbox-container">
+                                <input class="checkbox" type="checkbox" id="competition" name="competition" value="Competition">
+                                <label class="checkbox_label" for="competition"> Competition </label><br>
+                        </div>
+                        <div class="checkbox-container">
+                                <input class="checkbox" type="checkbox" id="animations" name="animations" value="Animations">
+                                <label class="checkbox_label" for="animations"> Animations </label><br>
+                        </div>
+                        <div class="checkbox-container">
+                                <input class="checkbox" type="checkbox" id="inscriptions" name="inscriptions" value="Inscriptions">
+                                <label class="checkbox_label" for="inscriptions"> Inscriptions </label><br>
+                        </div>
+                <br>
+                        <div class="message">
+                                <label for="message">Mesage</label>
+                                <textarea name="message" id="message" placeholder="Votre message" rows="10"></textarea>
+                                <br>
+                                <br>
+                                <label for="document">Téléchargement </label>
+                                <input type="file" id="document" name="document">
+                                <br>
+                                <br>
+                                <div class="checkbox-container">
+                                    <input class ="checkbox" type="checkbox" id="conditions" name="conditions" value="J'ai lu et j'accepte les conditions générales">
+                                    <label for="conditions"> J'accepte les CGV </label><br>
+                                </div>
+                                <br>
+                        </div>
+        </section>
 <br>
-        <label for="nom">Prénom</label>
-        <input type="text" id="prenom" placeholder="Prenom" required>   
 <br>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Email" required>
 <br>
-        <label for="telephone">Téléphone</label>
-        <input type="tel" id="telephone" placeholder="Numéro de téléphone" required>
-<br>        
-        <label for="adherent">Etes-vous adhérent au club?</label>
-        <input class="radio" type="radio" id="Oui" name="fav_language" value="Oui">
-        <label for="prestation">Oui</label>
-        <input class="radio" type="radio" id="Non" name="fav_language" value="Non">
-        <label for="prestation">Non</label>
-
-<br> 
-        <h2> Votre demande concerne </h2>
-        <input class="checkbox" type="checkbox" id="ecole" name="ecole" value="Ecole de tennis">
-        <label for="ecole"> Ecole de tennis </label><br>
-        <input class="checkbox" type="checkbox" id="cours" name="cours" value="Cours adultes">
-        <label for="cours"> Cours adultes </label><br>
-        <input class="checkbox" type="checkbox" id="competition" name="competition" value="Competition">
-        <label for="competition"> Competition </label><br> 
-        <input class="checkbox" type="checkbox" id="animations" name="animations" value="Animations">
-        <label for="animations"> Animations </label><br>
-        <input class="checkbox" type="checkbox" id="inscriptions" name="inscriptions" value="Inscriptions">
-        <label for="inscriptions"> Inscriptions </label><br>
-        
-<br>
-        <label for="date">Mesage</label>
-        <input type="text" id="message" placeholder="Votre message">
-<br>  
-<br>  
-        <label for="document">Téléchargement </label>
-        <input type="file" id="document" name="document">
-<br>  
-<br>
-        <input class ="checkbox" type="checkbox" id="conditions" name="conditions" value="J'ai lu et j'accepte les conditions générales">
-        <label for="conditions"> J'ai lu et j'accepte les CGV </label><br>
-<br> 
-<br> 
-<br>
-<br> 
-        <input type="submit" id="submit" value="Envoyer">
-
+<div class="contact-form_footer">
+    <button type="submit" id="submit">Envoyer</button>
+</div>
     </form>
-    
+<br>
+    <footer class="page-footer">
+        <section class="footer-social">
+          <h3>Reste en contact</h3>
+          <span class="footer-icons">
+            <a href="https://www.facebook.com/pages/Tennis-Club-De-Bordeaux/456540004432167" target="_blank">
+              <i class="fa fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <i class="fa fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa fab fa-instagram fa-2x"></i>
+            </a>
+          </span>
+        </section>
+        <section class="footer-infos">
+          <section class="footer-section">
+            <h3>A propos du club</h3>
+            <p>
+              Le club de tennis Gironde est dédié à la promotion du tennis amateur et
+              professionnel depuis 20 ans. Nous offrons des cours pour tous les
+              âges et niveaux.
+            </p>
+          </section>
+          <section class="footer-section">
+            <h3>Nos installations</h3>
+            <p>
+              Nos installations comprennent 10 courts en terre battue, 5 courts en
+              dur, une salle de fitness, des vestiaires et un club-house avec
+              restaurant.
+            </p>
+          </section>
+          <section class="footer-section">
+            <h3>Contactez-nous</h3>
+            <ul class="footer-coordinates">
+              <li>
+                <label>Adresse: </label>
+                <a
+                  href="https://www.google.fr/maps/place/Tennis+Club/@44.855497,-0.6058199,13z/data=!4m10!1m2!2m1!1sbordeaux+tennis+club!3m6!1s0xd5527eec43bddbd:0x9d5b1a98bc661c14!8m2!3d44.83997!4d-0.590235!15sChRib3JkZWF1eCB0ZW5uaXMgY2x1YpIBC3Rlbm5pc19jbHVi4AEA!16s%2Fg%2F11mk4gtl54?entry=ttu"
+                  target="_blank">
+                  15 Rue Chauffour, 33000 Bordeaux
+                </a>
+              </li>
+              <li>
+                <label>Téléphone: </label>
+                <a href="tel:+33123456789">01 23 45 67 89</a>
+              </li>
+              <li>
+                <label>email: </label>
+                <a href="mailto:+info@clubdetennis.com">info@clubdetennis.com</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-section">
+            <h3>Nos installations</h3>
+            <p>
+              Nos installations comprennent 10 courts en terre battue, 5 courts en
+              dur, une salle de fitness, des vestiaires et un club-house avec
+              restaurant.
+            </p>
+          </section>
+        </section>
+      </footer>
     <script src="script.js"></script>
-
 </body>
