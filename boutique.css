@@ -1,26 +1,22 @@
-.body{
-     background-color: blue; 
- }
- 
+
+
  .container {
      width: 100%;
      height: 100%;
-     display: flex; 
+     display: flex;
      /*justify-content: center; */
      align-items: center;
     /* justify-content: center; */
     justify-content: space-around;
-    /*flex-direction: column; */
-    /*align-items: flex-end; */
-    /*justify-content: space-between; */
+    /*flex-direction: column; */ 
+    /*align-items: center; */
     flex-wrap: nowrap;
     
-    
- }
+    flex-wrap: nowrap;
+ } 
  
-   
  .image-list{
-   width: 350px;
+   width: 250px;
    height: 610px;;
    background-color: rgba(0, 157, 255, 0.825);
    border-radius: 10px;
@@ -31,6 +27,11 @@
   justify-content:space-between ;
   box-sizing: border-box;
   margin: 20px 10px;
+  /*gap: 10px;*/
+   /* margin-top: 200px;
+    display: flex;*/
+    /*justify-content: space-around;
+    align-items: center;*/
  }
  .detail{
      display: flex;
@@ -46,8 +47,21 @@
  .detail h1{
      color: azure;
  }
-
- .image{
+ .ARTENGO{
+     color: blue;
+     font-size: 25px;
+     font-weight: bold;
+     letter-spacing: 2px;
+     margin-top: 20px;
+ }
+ 
+.logo{
+    width: 100px;
+}
+/*.content{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
+.image{
     gap: 10px;
     margin-top: 200px;
     display: flex;
@@ -61,10 +75,3 @@
     flex-direction: column;
     align-items: center;
  }
-.logo{
-    width: 100px;
-}
-.model{
-    width: 50px;
-    height: 50px;
-}
