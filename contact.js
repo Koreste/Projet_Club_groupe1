@@ -26,7 +26,7 @@ const prenomError = document.getElementById('prenomError');
 const emailError = document.getElementById('emailError');
 const telephoneError = document.getElementById('telephoneError');
 const conditionsError = document.getElementById('conditionsError');
-const submitBtn = document.getElementById('submitBtn');
+const contactSubmit = document.getElementById('contactSubmit');
 function validateNom() {
     const nomValue = nomInput.value.trim();
     const nomRegex = /^[A-Z][a-z]+$/;
@@ -97,9 +97,9 @@ function validateForm() {
     validateTelephone();
     validateConditions();
     if (nomInput.value.trim() && prenomInput.value.trim() && emailInput.value.trim() && telephoneInput.value.trim() && conditionsCheckbox.checked) {
-        submitBtn.disabled = false;
+        contactSubmit.disabled = false;
     } else {
-        submitBtn.disabled = true;
+        contactSubmit.disabled = true;
     }
 }
 nomInput.addEventListener('input', validateNom);

@@ -82,7 +82,7 @@
           </label>
           <div id="telephoneError"></div>
           <div class="radio_line">
-            <label>Etes-vous adhérent au club?</label>
+            <label >Etes-vous adhérent au club?</label>
             <input
               class="radio"
               type="radio"
@@ -90,7 +90,7 @@
               name="fav_language"
               value="Oui"
             />
-            <label for="contact-form_yes">Oui</label>
+            <label class="contact-form_radio-label" for="contact-form_yes">Oui</label>
             <input
               class="radio"
               type="radio"
@@ -98,7 +98,7 @@
               name="fav_language"
               value="Non"
             />
-            <label for="contact-form_no">Non</label>
+            <label class="contact-form_radio-label" for="contact-form_no">Non</label>
           </div>
         </div>
         <div>
@@ -162,8 +162,8 @@
           <label for="message">Mesage</label>
           <textarea name="message" id="message" placeholder="Votre message" rows="10"></textarea>
           <label for="document">Téléchargement </label>
-          <input type="file" id="document" name="document"> -->
-          <div class="checkbox-container">
+          <input type="file" id="document" name="document">
+          <div class="checkbox-container cgv">
               <input class ="checkbox" type="checkbox" id="conditions" name="conditions" value="J'ai lu et j'accepte les conditions générales">
               <label for="conditions"> J'accepte les CGV </label><br>
           </div>
@@ -173,7 +173,7 @@
       <br />
       <br />
       <div class="contact-form_footer">
-        <button type="submit" id="submit">Envoyer</button>
+        <button type="submit" id="contactSubmit" disabled>Envoyer</button>
       </div>
     </form>
     <br />
@@ -202,14 +202,6 @@
             Le club de tennis Gironde est dédié à la promotion du tennis amateur
             et professionnel depuis 20 ans. Nous offrons des cours pour tous les
             âges et niveaux.
-          </p>
-        </section>
-        <section class="footer-section">
-          <h3>Nos installations</h3>
-          <p>
-            Nos installations comprennent 10 courts en terre battue, 5 courts en
-            dur, une salle de fitness, des vestiaires et un club-house avec
-            restaurant.
           </p>
         </section>
         <section class="footer-section">
