@@ -27,13 +27,13 @@ body{
     overflow: hidden;
 }
 .top{
-    background-image: url("photos/tennistcg.png");
+  background-repeat: no-repeat;
+  background-color: #001e62;
+  background-image: url("photos/tennistcg.png");
     height: 200px;
     overflow: hidden;
     margin-bottom: 5px;
 }
-
-
 
 h1{
     font-size: 2.5rem;
@@ -43,8 +43,7 @@ h1{
     font-style: normal;
     text-decoration: underline orange;
     margin:1rem;
-    
-    
+ 
 }
 
 .nav{
@@ -74,24 +73,20 @@ h1{
     font-style: normal;
 }
 
-
 .nav li:hover{
-    background-color: gray;
+    background-color: #d96211;
     border: none;
 }
-
 
 .nav li a:hover{
     color: #001e62;
 }
 
 .slider{
-   
     height: 600px;
     width: 800px;
     position :relative;
-    margin-left: 350px;
-    
+    margin-left: 580px;
     margin-bottom: 100px;
 }
 .slider_content{
