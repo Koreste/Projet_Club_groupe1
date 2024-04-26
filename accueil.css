@@ -32,14 +32,7 @@ body{
     overflow: hidden;
     margin-bottom: 5px;
 }
-.top p{
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: underline red;
-}
+
 
 
 h1{
@@ -48,10 +41,12 @@ h1{
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-    text-decoration:red;
+    text-decoration: underline orange;
+    margin:1rem;
     
     
 }
+
 .nav{
     background-color: #001e62;
     height: 100px;
@@ -99,7 +94,6 @@ h1{
     
     margin-bottom: 100px;
 }
-
 .slider_content{
     height:100%;
     width:100%;
@@ -160,6 +154,7 @@ h1{
     left:-100px;
     top : 60%;
     transform: translateY(-50%);
+}
 }
   ul {
     list-style: none;
