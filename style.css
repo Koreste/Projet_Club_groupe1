@@ -105,6 +105,45 @@ a {
   }
 }
 
+/* Boutique */
+.shop-card {
+  display: flex;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #001E62;
+  color: white;
+  padding: 10px;
+}
+
+.shop-card__image {
+  max-width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.shop-card__info {
+  flex-grow: 1;
+}
+
+.shop-card__title {
+  margin-top: 0;
+}
+
+.shop-card__price {
+  font-weight: bold;
+}
+
+.shop-card__logo-image {
+  max-width: 100px;
+  height: auto;
+}
+
+#table-container{
+    display:flex;
+    justify-content: center;
+}
+
 /* contact form */
 form {
   background-image: linear-gradient(rgba(115, 115, 115, 0.9),rgba(0, 0, 0, 0.5)) , url(./assets/images/terre_battue.jpg);
