@@ -10,7 +10,6 @@
       rel="stylesheet">
 
     <script defer src="contact.js"></script>
-    <link href="footer.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -27,7 +26,7 @@
         </ul>
       </nav>
     </header>
-    <form class="contact-form" action="/" method="get">
+    <form class="contact-form" id="contactForm" action="" method="get">
       <h1>Contactez-nous</h1>
       <section class="contact-form_container">
         <div>
@@ -161,6 +160,7 @@
           </div>
           <label for="message">Mesage</label>
           <textarea name="message" id="message" placeholder="Votre message" rows="10"></textarea>
+          <div id="conditionsError"></div>
           <label for="document">Téléchargement </label>
           <input type="file" id="document" name="document">
           <div class="checkbox-container cgv">
