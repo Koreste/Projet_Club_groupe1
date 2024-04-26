@@ -2,97 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="boutique.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="./style.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header1">   
-        <h1>Tennis Club Gironde</h1>
-        <nav>
-            <ul class="nav">
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#">Club</a></li>
-              <li><a href="#">Boutique</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-    </header>
-    <main>
+  <header class="header1">
+    <div class="hero">
+      <img src="./assets/images/logo-mobile.png" alt="Logo">
+      <span class="title-mobile">Tennis club de Gironde</span>
+    </div>
+    <nav>
+      <ul class="nav">
+        <li><a href="./projet.html">Accueil</a></li>
+        <li><a href="./apropos.html">Club</a></li>
+        <li><a href="./boutique.html">Boutique</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+        <br>
+        <br>
+        <br>
+        <div id="table-container">
         <Table>
         <tr>
             <td>
-        <!--<li class="item1"> -->
-            <div class="image-list">
-                <p class="ARTENGO"><h4>ARTENGO</h4></p>
-        <img src="produit sans prix2.JPG" alt="produit10" class="model">
-        <div class="detail">
-            <h1>40€ </h1>
-        <p>SAC DE tennis -Artengo L team 9 Raquettes noir bleu</p>
-        <a href="https://web.whatsapp.com/">
-        
-            <img src="watsap.JPG" class="logo">
-           </a></td>
-       <!-- <button>ajouter au panier </button> -->
-       <!-- </li>
-    </ul>-->
-   <!-- <li class="item2">-->
-    <td>
-        <div class="image-list">
-           
-            <p class="ARTENGO"><h4>ARTENGO</h4></p>
-    <img src="produit sans prix3.JPG" alt="produit10" class="model">
-    <div class="detail">
-        <h1>13€ </h1>
-    <p> RAQUETTE DE TENNIS ADULTE TR100 NOIRE</p>
-    <a href="https://web.whatsapp.com/">
-        
-        <img src="watsap.JPG" class="logo">
-       </a>
-  <!-- <button>ajouter au panier </button> -->
-    </li></td></tr>
-    <tr><td>
-    <!--<li class="item3">-->
-        <div class="image-list">
-            <p class="ARTENGO"><h4>ARTENGO</h4></p>
-    <img src="produit sans prix4.JPG" alt="produit10" class="model">
-    <div class="detail">
-        <h1>110€ </h1>
-    <p>Balle de tennis polyvalente -ARTENGO comfort Pro*4 Jaune Carton 18 tubes</p>
-    <a href="https://web.whatsapp.com/">
-        
-        <img src="watsap.JPG" class="logo">
-       </a>
-   
-    </li>
-    <td>
-       
-                <div class="image-list">
-                    <p class="ARTENGO"><h4>ARTENGO</h4></p>
-            <img src="produit sans prix1.JPG" alt="produit10" class="model">
-            <div class="detail">
-                <h1>65€ </h1>
-            <p>PANIER DE BALLES DE TENNIS A ROULETTES</p>
-            
-          
-           <a href="https://web.whatsapp.com/">
-            
-            <img src="watsap.JPG" class="logo">
+              <div class="shop-card">
+              <img src="./assets/images/produit sans prix2.JPG" alt="produit10" class="shop-card__image">
+              <div class="shop-card__info">
+                <h4 class="shop-card__title">ARTENGO</h4>
+            <p class="shop-card__price">40€</p>
+        <p class="shop-card__description">SAC DE tennis -Artengo L team 9 Raquettes noir bleu</p>
+        <a href="https://web.whatsapp.com/" class="shop-card__logo">
+            <img src="watsap.JPG"alt="WhatsApp" class="shop-card__logo-image">
            </a>
-            </li>
+           </div>
+          </td>
+    <td>
+        <div class="shop-card">
+          <img src="./assets/images/produit sans prix3.JPG" alt="produit10" class="shop-card__image">
+          <div class="shop-card__info">
+            <h4 class="shop-card__title">ARTENGO</h4>
+        <p class="shop-card__price">13€ </p>
+    <p class="shop-card__description"> RAQUETTE DE TENNIS ADULTE TR100 NOIRE</p>
+    <a href="https://web.whatsapp.com/" class="shop-card__logo">
+        <img src="watsap.JPG" alt="WhatsApp" class="shop-card__logo-image">
+       </a>
+       </div>
+       </td></tr>
+    <tr><td>
+        <div class="shop-card">
+    <img src="./assets/images/produit sans prix4.JPG" alt="produit10" class="shop-card__image">
+       <div class="shop-card__info">
+      <h4 class="shop-card__title">ARTENGO</h4>
+      <p class="shop-card__price">110€ </p>
+    <p>Balle de tennis polyvalente -ARTENGO comfort Pro*4 Jaune Carton 18 tubes</p>
+    <a href="https://web.whatsapp.com/"class="shop-card__logo">
+        
+        <img src="watsap.JPG"alt="WhatsApp" class="shop-card__logo-image">
+       </a>
+       </div>
+  
+    <td>
+                <div class="shop-card">
+                  <img src="./assets/images/produit sans prix1.JPG" alt="produit10" class="shop-card__image">
+                  <div class="shop-card__info">
+                    <h4 class="shop-card__title">ARTENGO</h4>
+                    <p class="shop-card__price">65€ </p>
+            <p>PANIER DE BALLES DE TENNIS A ROULETTES</p>
+           <a href="https://web.whatsapp.com/"class="shop-card__logo">
+            
+            <img src="watsap.JPG"alt="WhatsApp" class="shop-card__logo-image">
+           </a></div>
+      
 </tr></td>
 </Table>
 </div>
 </div>
-
 </div>
-  
+</div>
+<footer class="page-footer">
+    <section class="footer-social">
+      <h3>Reste en contact</h3>
+      <span class="footer-icons">
+        <a
+          href="https://www.facebook.com/pages/Tennis-Club-De-Bordeaux/456540004432167"
+          target="_blank"
+        >
+          <i class="fa fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fab fa-instagram fa-2x"></i>
+        </a>
+      </span>
+    </section>
+    <div class="footer-infos">
+      <section class="footer-section">
+        <h3>A propos du club</h3>
+        <p>
+          Le club de tennis Gironde est dédié à la promotion du tennis amateur
+          et professionnel depuis 20 ans. Nous offrons des cours pour tous les
+          âges et niveaux.
+        </p>
+      </section>
+      <section class="footer-section">
+        <h3>Contactez-nous</h3>
+        <ul class="footer-coordinates">
+          <li>
+            <label>Adresse: </label>
+            <a
+              href="https://www.google.fr/maps/place/Tennis+Club/@44.855497,-0.6058199,13z/data=!4m10!1m2!2m1!1sbordeaux+tennis+club!3m6!1s0xd5527eec43bddbd:0x9d5b1a98bc661c14!8m2!3d44.83997!4d-0.590235!15sChRib3JkZWF1eCB0ZW5uaXMgY2x1YpIBC3Rlbm5pc19jbHVi4AEA!16s%2Fg%2F11mk4gtl54?entry=ttu"
+              target="_blank"
+            >
+              15 Rue Chauffour, 33000 Bordeaux
+            </a>
+          </li>
+          <li>
+            <label>Téléphone: </label>
+            <a href="tel:+33123456789">01 23 45 67 89</a>
+          </li>
+          <li>
+            <label>email: </label>
+            <a href="mailto:+info@clubdetennis.com">info@clubdetennis.com</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-section">
+        <h3>Nos installations</h3>
+        <p>
+          Nos installations comprennent 10 courts en terre battue, 5 courts en
+          dur, une salle de fitness, des vestiaires et un club-house avec
+          restaurant.
+        </p>
+      </section>
+    </div>
+  </footer>
+
   </body>
-  <script src="Boutique.js" type="text/javascript"></script>
+  
 </html>
