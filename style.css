@@ -36,6 +36,30 @@ a {
   background-color: white;
 }
 
+.hero {
+  background-color: var(--button-bg-color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  width: 100%;
+  color: var(--link-unvisited);
+  font-size: xx-large;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.logo-container {
+  background-color: var(--button-bg-color1);
+  width: 180px; /* Réglez cette valeur selon vos besoins */
+  text-align: center;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Site navigation */
 .nav{
   align-items: center;
