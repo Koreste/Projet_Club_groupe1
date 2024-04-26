@@ -1,5 +1,41 @@
+nav {
+    text-align: center; /* Centrer horizontalement le contenu du nav */
+  }
+  .nav li {
+    display: inline-block; /*Affichage en ligne côté des autres horizontalement */
+   /* margin-right: 10px; /* pour lespca */
+    margin: 10px 20px 30px 40px; /*pour lespace entre le cadre est le div */
+    border: 1px solid #ccc; /* Ajouter une bordure autour de chaque élément */
+    padding: 10px;
+  }
 
+   .container {
+    display: flex;
+    justify-content:space-around ; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */ 
+   }
+nav ul {
+    list-style-type: none;
+    /*margin: 50;*/
+   /* padding: 0; */
+    background-color:blue;
+  }
+   nav ul li {
+    display: inline; /* l'espace entre les éléments */
+   }
+  
+  nav ul li a {
 
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color:chocolate;*/couleur de fond des liens du menu*/
+  }
  .container {
      width: 100%;
      height: 100%;
@@ -12,11 +48,11 @@
     /*align-items: center; */
     flex-wrap: nowrap;
     
-    flex-wrap: nowrap;
+    
  } 
  
  .image-list{
-   width: 250px;
+   width: 350px;
    height: 610px;;
    background-color: rgba(0, 157, 255, 0.825);
    border-radius: 10px;
@@ -61,17 +97,26 @@
 /*.content{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 } */
-.image{
-    gap: 10px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- }
+
  .image_item{
     gap : 10px;
-    background-color: blue;
+    background-color: rgb(0, 0, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
  }
+ .image-table {
+    border-collapse: collapse; /* Fusionne les bordures des cellules */
+}
+
+.image-table td {
+    padding: 10px; /* Ajoute un espace entre les cellules */
+}
+.image-table td {
+    width: 25%; /* Chaque colonne prendra 25% de la largeur */
+    padding: 10px; /* Ajoute un espacement entre les cellules */
+}
+.table style{
+    margin: 100px;auto;
+}
+
