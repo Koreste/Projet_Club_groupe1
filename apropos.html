@@ -1,94 +1,178 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="apropos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+    />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet">
-    <title>Document</title>
-  </head>
-  <body>
+      rel="stylesheet"
+      href="./assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <title>A propos du TCG</title>
+</head>
+<body>        
     <header class="header1">
-      <h1>Tennis Club Gironde</h1>
-      <nav>
-        <ul class="nav">
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Club</a></li>
-          <li><a href="#">Boutique</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="hero">
+          <img src="./assets/images/logo-mobile.png" alt="Logo">
+          <span>Tennis club de Gironde</span>
+        </div>
+
+        <!--nav menu-->
+        <nav>
+            <ul class="nav">            
+                <li><a href="Projet.html">Accueil</a></li>
+                <li><a href="apropos.html">Club</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <div class="row">
-        <div class="”post-text-box”">
-          <section>
-            <div class="grille1">
-              <!--Image qui prend toute la largeur-->
-              <img
-                class="image1"
-                src="photos/photo1.jpg"
-                alt="photos page à propos"
-              />
-              <p class="text-over">A propos du TCG</p>
-            </div>
+        <div class="row">
+            <div class=”post-text-box”>
+                <section>
+                    <!--nav menu-->
+                    <div class="slide-container">
+                        <div class="custom-slider fade">
+                            <img class="slide-img" src="photos/photo1.jpg">
+                        </div>
+                        <div class="custom-slider fade">
+                            <img class="slide-img" src="photos/photo2.jpg" alt="photos page à propos">
+                        </div>
+                        <div class="custom-slider fade">
+                            <img class="slide-img" src="photos/photo3.jpg" alt="photos page à propos">
+                        </div>
+                        <div class="custom-slider fade">
+                            <img class="slide-img" src="photos/photo4.jpg" alt="photos page à propos">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                    </div>
+                    <br>
+                    <div class="slide-dot">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    
+                    <article>
+                       <h2><span class="apropos-titre2">SOYEZ EN PLEINE FORME</span></h2>
+                       <p>
+                          <span class="p-apropos">
+                              En forme. En meilleure forme. En forme parfaite. Nous sommes toujours plus nombreux à trouver important de nous 
+                              sentir bien dans notre peau. Faire du sport aide à être en forme et à le rester. Le tennis est très populaire et, 
+                              chez <span class="tgc-orange">TCG</span>, nous mettons tout en œuvre pour que le sport en club soit encore plus agréable et facile pour vous. 
+                          </span>
+                       </p> 
+                       <br>
+                       <h2><span class="apropos-titre2" >LES AVANTAGES DE FAIRE DU SPORT CHEZ TENNIS CLUB DE GIRONDE</span></h2>
+                       <p>
+                          <span class="p-apropos">
+                              TCG est l'un des plus grands clubs de tennis en France. Chez nous, vous pouvez faire du sport de manière illimitée, 
+                              tous les jours de la semaine sans payer le prix fort. Vous avez un <b>abonnement annuel de 150€</b>. 
+                              Et chez nous, vous ne devez rien payer pour prendre une douche ou ranger vos affaires 
+                              dans un casier. Nous trouvons qu’il est important que votre club soit un endroit où vous vous sentez comme chez vous
+                          </span>
+                       </p> 
+                       <br>
+                       <h2><span class="apropos-titre2">L'HISTORIQUE</span></h2>   
+                       <ul>
+                          <li>
+                              <p><span class="p-apropos"><b>1980</b> : Création du club.</span></p>
+                              <p><span class="p-apropos"><b>1994</b> : Les clubs de St Martin et du Bois Plage fusionnent, les deux courts de St Martin sont désormais couverts grâce à un cofinancement des 
+                                deux communes et du Ré TC. Une convention tripartite est signée.</span></p>
+                              <p><span class="p-apropos"><b>2009</b> : Réalisation du mur d’entraînement et du mini tennis à Gros Jonc.</span></p>
+                              <p><span class="p-apropos" ><b>2012</b> : Construction d’un club house à côté des courts couverts de St Martin.</span></p>
+                              <p><span class="p-apropos"><b>2015</b> : Mise en service de l’éclairage de deux courts à Gros Jonc.</span></p>
+                              <p><span class="p-apropos"><b>2021</b> : “Regénération” des courts de Gros Jonc au Bois Plage et installation d’un éclairage LED dans la salle de Saint Martin.</span></p>
+                              <p><span class="p-apropos"><b>2023</b> :Tous nos remerciements aux bénévoles qui se sont succédé pour gérer le club, à nos partenaires privés, et aux deux communes qui l’ont accompagné 
+                                et soutenu dans son développement.
+                                </span></p>
+                              <p>
+                                <span class="p-apropos">
+                                  <b>2024</b> : Réfection totale de la toiture de la salle de Saint-Martin et création de 2 pistes de PADEL sur le site de 
+                                  Gros Jonc à Bois-Plage.
+                                </span>
+                              </p>
+                          </li>
+                       </ul>                    
+                    </article>
+                 </section>
+              </div>
 
-            <article>
-              <h2>SOYEZ EN PLEINE FORME</h2>
-              <p>
-                En forme. En meilleure forme. En forme parfaite. Nous sommes
-                toujours plus nombreux à trouver important de nous sentir bien
-                dans notre peau. Faire du sport aide à être en forme et à le
-                rester. Le tennis est très populaire et, chez TCG, nous mettons
-                tout en œuvre pour que le sport en club soit encore plus
-                agréable et facile pour vous.
-              </p>
-              <br>
-              <h2>
-                Les AVANTAGES DE FAIRE DU SPORT CHEZ TENNIS CLUB DE GIRONDE
-              </h2>
-              <p>
-                TCG est l'un des plus grands clubs de tennis en France. Chez
-                nous, vous pouvez faire du sport de manière illimitée, tous les
-                jours de la semaine sans payer le prix fort. Vous avez un
-                abonnement annuel de 150€. Et chez nous, vous ne devez rien
-                payer pour prendre une douche ou ranger vos affaires dans un
-                casier. Nous trouvons qu’il est important que votre club soit un
-                endroit où vous vous sentez comme chez vous.
-              </p>
-              <h2>L'HISTORIQUE</h2>
-              <p>
-                1980 : Création du club. 1994 : Les clubs de St Martin et du
-                Bois Plage fusionnent, les deux courts de St Martin sont
-                désormais couverts grâce à un cofinancement des deux communes et
-                du Ré TC. Une convention tripartite est signée. Entre 1995 et
-                2000 : Construction d’un nouveau club house à Gros Jonc. 2009 :
-                Réalisation du mur d’entraînement et du mini tennis à Gros Jonc.
-                2012 : Construction d’un club house à côté des courts couverts
-                de St Martin. 2015 : Mise en service de l’éclairage de deux
-                courts à Gros Jonc. 2021 : “Regénération” des courts de Gros
-                Jonc au Bois Plage et installation d’un éclairage LED dans la
-                salle de Saint Martin. 2023-2024 : Réfection totale de la
-                toiture de la salle de Saint-Martin et création de 2 pistes de
-                PADEL sur le site de Gros Jonc à Bois-Plage . Tous nos
-                remerciements aux bénévoles qui se sont succédé pour gérer le
-                club, à nos partenaires privés, et aux deux communes qui l’ont
-                accompagné et soutenu dans son développement.
-              </p>
-            </article>
-          </section>
-        </div>
-      </div>
+        </div>        
     </main>
-    <footer>
-      <p>Footer</p>
+    
+    <!--Footer-->
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h3>Reste en contact</h3>
+        <span class="footer-icons">
+          <a
+            href="https://www.facebook.com/pages/Tennis-Club-De-Bordeaux/456540004432167"
+            target="_blank"
+          >
+            <i class="fa fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fa fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa fab fa-instagram fa-2x"></i>
+          </a>
+        </span>
+      </section>
+      <div class="footer-infos">
+        <section class="footer-section">
+          <h3>A propos du club</h3>
+          <p>
+            Le club de tennis Gironde est dédié à la promotion du tennis amateur
+            et professionnel depuis 20 ans. Nous offrons des cours pour tous les
+            âges et niveaux.
+          </p>
+        </section>
+        <section class="footer-section">
+          <h3>Contactez-nous</h3>
+          <ul class="footer-coordinates">
+            <li>
+              <label>Adresse: </label>
+              <a
+                href="https://www.google.fr/maps/place/Tennis+Club/@44.855497,-0.6058199,13z/data=!4m10!1m2!2m1!1sbordeaux+tennis+club!3m6!1s0xd5527eec43bddbd:0x9d5b1a98bc661c14!8m2!3d44.83997!4d-0.590235!15sChRib3JkZWF1eCB0ZW5uaXMgY2x1YpIBC3Rlbm5pc19jbHVi4AEA!16s%2Fg%2F11mk4gtl54?entry=ttu"
+                target="_blank"
+              >
+                15 Rue Chauffour, 33000 Bordeaux
+              </a>
+            </li>
+            <li>
+              <label>Téléphone: </label>
+              <a href="tel:+33123456789">01 23 45 67 89</a>
+            </li>
+            <li>
+              <label>email: </label>
+              <a href="mailto:+info@clubdetennis.com">info@clubdetennis.com</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <h3>Nos installations</h3>
+          <p>
+            Nos installations comprennent 10 courts en terre battue, 5 courts en
+            dur, une salle de fitness, des vestiaires et un club-house avec
+            restaurant.
+          </p>
+        </section>
+      </div>
     </footer>
-  </body>
+
+    <script src="apropos.js"></script>
+</body>
 </html>
