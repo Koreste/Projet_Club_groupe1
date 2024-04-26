@@ -106,7 +106,7 @@ a {
 
 /* contact form */
 form {
-  background-image: linear-gradient(rgba(115, 115, 115, 0.9),rgba(0, 0, 0, 0.5)) , url(terre_battue.jpg);
+  background-image: linear-gradient(rgba(115, 115, 115, 0.9),rgba(0, 0, 0, 0.5)) , url(./assets/images/terre_battue.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 20px;
