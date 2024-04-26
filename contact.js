@@ -26,18 +26,18 @@ const prenomError = document.getElementById('prenomError');
 const emailError = document.getElementById('emailError');
 const telephoneError = document.getElementById('telephoneError');
 const conditionsError = document.getElementById('conditionsError');
-const submitBtn = document.getElementById('submitBtn');
+const contactSubmit = document.getElementById('contactSubmit');
 function validateNom() {
     const nomValue = nomInput.value.trim();
     const nomRegex = /^[A-Z][a-z]+$/;
     if (!nomRegex.test(nomValue) || nomValue.length < 2) {
         nomError.textContent = 'Le nom doit commencer par une majuscule et contenir au moins 2 caractères.';
         nomError.style.display = 'block';
-        return false;
+        
     } else {
         nomError.textContent = '';
         nomError.style.display = 'none';
-        return true;
+       
     }
 }
 function validatePrenom() {
@@ -46,11 +46,11 @@ function validatePrenom() {
     if (!prenomRegex.test(prenomValue) || prenomValue.length < 2) {
         prenomError.textContent = 'Le prénom doit commencer par une majuscule et contenir au moins 2 caractères.';
         prenomError.style.display = 'block';
-        return false;
+        
     } else {
         prenomError.textContent = '';
         prenomError.style.display = 'none';
-        return true;
+       
     }
 }
 function validateEmail() {
@@ -59,11 +59,11 @@ function validateEmail() {
     if (!emailRegex.test(emailValue)) {
         emailError.textContent = 'Veuillez entrer une adresse email valide.';
         emailError.style.display = 'block';
-        return false;
+        
     } else {
         emailError.textContent = '';
         emailError.style.display = 'none';
-        return true;
+       
     }
 }
 function validateTelephone() {
@@ -72,22 +72,22 @@ function validateTelephone() {
     if (!telephoneRegex.test(telephoneValue)) {
         telephoneError.textContent = 'Veuillez entrer un numéro de téléphone français valide.';
         telephoneError.style.display = 'block';
-        return false;
+        
     } else {
         telephoneError.textContent = '';
         telephoneError.style.display = 'none';
-        return true;
+        
     }
 }
 function validateConditions() {
     if (!conditionsCheckbox.checked) {
         conditionsError.textContent = 'Vous devez accepter les conditions.';
         conditionsError.style.display = 'block';
-        return false;
+        
     } else {
         conditionsError.textContent = '';
         conditionsError.style.display = 'none';
-        return true;
+       
     }
 }
 function validateForm() {
@@ -97,9 +97,9 @@ function validateForm() {
     validateTelephone();
     validateConditions();
     if (nomInput.value.trim() && prenomInput.value.trim() && emailInput.value.trim() && telephoneInput.value.trim() && conditionsCheckbox.checked) {
-        submitBtn.disabled = false;
+        contactSubmit.disabled = false;
     } else {
-        submitBtn.disabled = true;
+        contactSubmit.disabled = true;
     }
 }
 nomInput.addEventListener('input', validateNom);
@@ -109,6 +109,6 @@ telephoneInput.addEventListener('input', validateTelephone);
 conditionsCheckbox.addEventListener('change', validateConditions);
 form.addEventListener('submit', function(event) {
     event.preventDefault();
-    // Ici vous pouvez ajouter le code pour soumettre le formulaire, par exemple :
-    // form.submit();
+    
+    form.submit();
 });

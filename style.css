@@ -17,7 +17,7 @@ body{
   font-family: Roboto;
   font-size: 20px;
   margin: 0;
-  padding: 180px 0px 0px 0px;
+  padding: 210px 0px 0px 0px;
 }
 ul {
   list-style: none;
@@ -82,13 +82,12 @@ a {
 
 /* contact form */
 form {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(terre_battue.jpg);
+  background-image: linear-gradient(rgba(115, 115, 115, 0.9),rgba(0, 0, 0, 0.5)) , url(terre_battue.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 20px;
   padding: 20px;
-
-  }
+}
 
 #nomError, #prenomError, #emailError, #telephoneError {
 color: red;
@@ -118,10 +117,17 @@ label {
 .checkbox-container {
   align-items: center;
   display: flex;
+  margin-bottom: 10px !important;
 }
+
 .contact-form_container div:nth-child(2) h2 {
   margin-bottom: 2.5rem; /* because of input label */
 }
+
+.contact-form_container label:not(label:first-of-type) {
+  margin-top: 30px;
+}
+
 input[type="checkbox"] {
   width: 40px;
   margin-left: -14px;
@@ -135,7 +141,7 @@ label.checkbox_label {
   text-align: center;
   align-items: center;
 }
-#submit{
+#contactSubmit{
     width: 250px;
     background-color: #001E62;
     padding: 10px;
@@ -143,12 +149,18 @@ label.checkbox_label {
     color: rgb(253, 253, 253);
     font-size: 20px;
     font-weight: bold;
+    margin-right: 10px;
 }
-#submit:hover{
+#contactSubmit:hover{
   background-color:white;
-  border: 1px solid rgb(26, 0, 128);
+
   color : rgb(26, 0, 128) ;
 }
+#contactSubmit:disabled{
+  background-color:rgb(126, 126, 126);
+  color : rgb(107, 107, 107);
+}
+
 .titre{
     text-align: center;
 }
@@ -160,11 +172,7 @@ h1{
   color:#FFFFFF;
   text-align: center;
 }
-.radio_line{
-  margin-bottom : -31px;
-  display: flex;
-  align-items: center;
-}
+
 .checkbox {
   float: left;
 }
@@ -173,18 +181,35 @@ h1{
   display: flex;
 }
 .contact-form_container div {
-  margin: 0 10px;
+  margin: 0px 10px;
   flex: 1;
 }
+
+div.cgv {
+  margin-top: 30px;
+}
+
 .contact-form_container h2 {
   text-align: start;
 }
 .contact-form_container label {
   font-size: small;
 }
-div.message {
-  margin: 0;
+
+div.radio_line {
+  margin-bottom : -31px;
+  margin-left: 0;
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
 }
+div.radio_line > label.contact-form_radio-label {
+  margin-top: 0;
+  margin-left: 0;
+  /* align-self: center; */
+}
+
 #message {
   resize: none;
   width: 100%;
@@ -198,6 +223,10 @@ div.message {
   .contact-form_container {
     flex-direction: column;
   }
+
+  div.radio_line {
+    margin-bottom : 0;
+  }
 }
 
 /* global footer */
@@ -207,6 +236,7 @@ div.message {
 .footer-coordinates li label {
   display: inline-block;
   width: 100px;
+  color: unset;
 }
 .footer-coordinates li:not(:last-child) {
   margin-bottom: 1rem;
