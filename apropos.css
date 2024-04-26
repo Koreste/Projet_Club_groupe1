@@ -31,13 +31,13 @@ h1 {
 }
 
 nav {
-    padding-top: 20px;
+    /* padding-top: 5px; */
     padding-left: 0% ;
     padding-right: 0%;
     width: 100%;
 }
 
-.nav{
+.apropos-nav{
     display: grid;
     grid-template-columns: 100px 200px;
     grid-template-rows: repeat(4, 200px);
@@ -48,25 +48,26 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding-left: 0;
+    margin-top: 5px;
 }
 
-.nav li{
+.apropos-nav li{
     list-style-type:none;
     border: 1px solid white;
     padding: 30px;
 }
 
-.nav li a{
+.apropos-nav li a{
     color: white;
     text-decoration: none;
     font-size: 22px;
 }
 
-.nav li:hover{
+.apropos-nav li:hover{
     background-color: #d96211;
 }
 
-.nav li a:hover{
+.apropos-nav li a:hover{
     color: #24350e;
 }
 
